@@ -77,6 +77,10 @@
     font-weight: normal;
 }
 
+body{
+    text-align: justify;
+}
+
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
     border: none;

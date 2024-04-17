@@ -99,3 +99,24 @@
     
 })(jQuery);
 
+
+
+function downloadFile(filePath, fileName) {
+    // Create a new anchor element
+    const downloadLink = document.createElement('a');
+
+    // Set the href attribute to the file path
+    downloadLink.href = filePath;
+
+    // Set the download attribute to specify the filename
+    downloadLink.download = fileName;
+
+    // Append the anchor to the document body
+    document.body.appendChild(downloadLink);
+
+    // Simulate a click event on the anchor
+    downloadLink.click();
+
+    // Clean up: remove the anchor from the document
+    document.body.removeChild(downloadLink);
+}
