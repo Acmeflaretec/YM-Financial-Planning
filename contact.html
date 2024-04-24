@@ -125,38 +125,46 @@
                             <h1 class="display-5 mb-4">Contact Us</h1>
                         </div>
                         <p class="mb-4">Reach out to YM Financial Planning for expert financial guidance. Our team is ready to assist you in securing your prosperous future.</p>
-                        <!-- <form> -->
+                        <form name="contact-form" method="post">
                             <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name"
+                                        style="height: 55px;" name="Name" required>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email"
+                                        style="height: 55px;" name="email" required>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Mobile"
+                                        style="height: 55px;" name="Mobile" required>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" style="height: 55px;" name="Service" required>
+                                        <option selected>Select A Service</option>
+                                        <option value="
+                                        Retirement Planning">
+                                            Retirement Planning</option>
+                                        <option value="Family Protection Plans">Family Protection Plans</option>
+                                        <option value="Long Term Savings Plans">Long Term Savings Plans</option>
+                                        <option value="Client-Centric Approach">Client-Centric Approach</option>
+                                        <option value="Wealth Management">Wealth Management</option>
+                                        <option value="Financial Freedom">Financial Freedom</option>
+                                        <option value="Insurance Solutions">Insurance Solutions</option>
+                                        <option value="Tailored Solutions">Tailored Solutions</option>
+                                    </select>
                                 </div>
                                 <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
+                                    <input type="date" class="form-control border-0" name="Date" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                            style="height: 100px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
+                                    <textarea class="form-control border-0" name="Note" placeholder="Special Note" required></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <a href="https://api.whatsapp.com/send?phone=9497749949"><button class="btn btn-primary w-100 py-3" >Send Message</button></a>
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
                                 </div>
                             </div>
-                        <!-- </form> -->
+                        </form>
                     </div>
                 </div>
                 <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
